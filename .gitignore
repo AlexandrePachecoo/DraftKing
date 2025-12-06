@@ -1,0 +1,60 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Expo
+.expo/
+.expo-shared/
+.expo/*
+
+# Metro bundler
+.metro-cache/
+*.metro-cache
+
+# Logs
+logs/
+*.log
+
+# Build outputs
+dist/
+build/
+web-build/
+
+# Android
+android/app/build/
+android/.gradle/
+android/.idea/
+android/local.properties
+android/.cxx/
+*.keystore
+*.jks
+
+# iOS
+ios/Pods/
+ios/build/
+ios/Podfile.lock
+ios/*.xcworkspace
+ios/*.xcuserdata
+ios/*/xcuserdata
+
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/*
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Expo dev certs
+*.pem
+
+# Environment variables
+.env
+.env.*
