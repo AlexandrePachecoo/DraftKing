@@ -8,8 +8,8 @@
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "jest",
-    "test:watch": "jest --watch",
-    "docker": "docker compose -f ./src/infra/compose.yaml up -d"
+    "test:watch": "jest --watchAll",
+    "docker": "docker compose -f ./src/infra/compose.yaml up "
   },
   "author": "",
   "license": "MIT",
@@ -18,6 +18,7 @@
     "prettier": "^3.7.4"
   },
   "dependencies": {
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "pg": "^8.16.3"
   }
 }
