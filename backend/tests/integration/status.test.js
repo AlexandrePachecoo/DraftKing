@@ -1,4 +1,5 @@
 const { database } = require("../../src/infra/database");
+require("dotenv").config();
 
 test("Get status returns 200 OK", async () => {
   const response = await fetch("http://localhost:3000/status");

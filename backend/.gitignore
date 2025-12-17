@@ -56,5 +56,5 @@ fastlane/test_output
 *.pem
 
 # Environment variables
-.env
+
 .env.*

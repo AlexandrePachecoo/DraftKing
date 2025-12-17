@@ -9,7 +9,7 @@
     "lint:fix": "prettier --write .",
     "test": "jest",
     "test:watch": "jest --watchAll",
-    "docker": "docker compose -f ./src/infra/compose.yaml up "
+    "docker": "docker compose -f ./src/infra/compose.yaml up -d"
   },
   "author": "",
   "license": "MIT",
@@ -18,6 +18,7 @@
     "prettier": "^3.7.4"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "pg": "^8.16.3"
   }
