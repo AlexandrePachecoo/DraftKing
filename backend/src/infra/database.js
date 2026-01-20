@@ -1,4 +1,8 @@
 const { Client } = require("pg");
+const path =
+  process.env.NODE_ENV === "production"
+    ? ".env.production"
+    : ".env.development";
 
 async function query(queryObject) {
   const client = new Client({
@@ -7,7 +11,7 @@ async function query(queryObject) {
     user: process.env.POSTGRES_USER,
     database: process.env.POSTGRES_DB,
     password: process.env.POSTGRES_PASSWORD,
-    ssl: false,
+    ssl: path === ".env.development" ? false : true,
   });
 
   try {
