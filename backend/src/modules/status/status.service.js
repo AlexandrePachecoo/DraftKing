@@ -1,10 +1,3 @@
-const path =
-  process.env.NODE_ENV === "production"
-    ? ".env.production"
-    : ".env.development";
-
-require("dotenv").config({ path });
-
 const { database } = require("../../infra/database");
 
 async function getStatus() {
