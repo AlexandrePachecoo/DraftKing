@@ -4,7 +4,7 @@
   "description": "Jogo em que você escala um time com jogadores reais da nba e disputa com seus amigos o melhor time",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run services:up && node server.js",
+    "dev": "NODE_ENV=development npm run services:up && node server.js",
     "lint:check": "prettier --check .",
     "lint:fix": "prettier --write .",
     "test": "jest",
