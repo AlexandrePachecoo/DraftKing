@@ -5,7 +5,7 @@ const path =
     : ".env.development";
 require("dotenv").config({ path });
 
-async function query(queryObject) {
+async function query(text, params) {
   const client = new Client({
     host: process.env.POSTGRES_HOST,
     port: process.env.POSTGRES_PORT,
@@ -17,7 +17,7 @@ async function query(queryObject) {
 
   try {
     await client.connect();
-    const result = await client.query(queryObject);
+    const result = await client.query(text, params);
     return result;
   } catch (err) {
     console.log(err);
